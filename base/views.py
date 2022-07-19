@@ -11,15 +11,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
-# from rest_framework import viewsets
-
-# from.serializers import TaskSerializer
-
-
-# class TaskViewsets(viewsets.ModelViewSet):
-#     queryset = Task.objects.all().order_by('title')
-#     serializer_class = TaskSerializer
-
 
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
